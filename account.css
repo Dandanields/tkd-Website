@@ -1,0 +1,44 @@
+.profil-container {
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px;
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item3";
+}
+.profil-container > div {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+img {
+  object-fit: cover;
+  object-position: 100% 10%;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: solid 7px gold;
+}
+
+.item1 {
+  grid-area: item1;
+  display: flex;
+  align-items: center;
+}
+
+.item2 {
+  grid-area: item2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.text {
+  text-align: center;
+}

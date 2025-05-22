@@ -2,6 +2,7 @@
 
 :root {
   --main-color: gold;
+  --hover-main-color: rgb(244, 207, 0);
   --black-color: black;
   --white-color: white;
   --heading1: 56px;
@@ -21,13 +22,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-}
-
-a {
-  font-family: var(--google-font);
-  font-size: var(--heading6);
-}
-p {
   font-family: var(--google-font);
 }
 
@@ -39,12 +33,10 @@ header {
 }
 
 .p-title {
-  font-family: var(--google-font);
-  font-size: var(--large);
+  font-size: var(--heading4);
 }
 
 .p-second-title {
-  font-family: var(--google-font);
   font-size: var(--heading3);
 }
 
@@ -66,7 +58,6 @@ body {
 .kick-img {
   width: 100%;
   opacity: 0.5;
-  z-index: 0;
 }
 
 form {
@@ -114,7 +105,16 @@ input {
   border: none;
   height: 40px;
   width: 200px;
-  font-family: var(--google-font);
+  font-size: var(--large);
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: var(--hover-main-color);
+  color: var(--black-color);
+  border: none;
+  height: 40px;
+  width: 200px;
   font-size: var(--large);
   margin-top: 15px;
 }
@@ -154,10 +154,8 @@ footer {
 .nav-menu ul li:hover {
   display: inline-block;
   background-color: var(--main-color);
-  border: solid 8px var(--black-color);
   border-radius: 100%;
-  padding: 10px;
-  margin-bottom: 80px;
+  padding: 5px;
 }
 
 .nav-menu ul li a {
@@ -165,6 +163,8 @@ footer {
   justify-content: center;
   align-items: center;
   color: var(--white-color);
+  height: 60px;
+  width: 60px;
 }
 .nav-menu ul li a:hover {
   color: var(--black-color);

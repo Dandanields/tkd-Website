@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  background-color: white;
+  border-radius: 15px;
+  height: 100%;
+  margin: 50px 0;
+  padding: 10px;
+}
+
+.calendar ul li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 55px 55px 55px 55px 55px 55px 55px;
+  grid-template-rows: 1 1 1 1 1 1 1;
+  padding: 10px;
+}
+
+.grid > div {
+  border: 1px solid black;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.grid > div:hover {
+  background-color: gold;
+  border: 1px solid black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.days {
+  background-color: gold;
+}
