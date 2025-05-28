@@ -12,7 +12,7 @@
   padding: 20px;
 }
 
-img {
+.profil-img {
   object-fit: cover;
   object-position: 100% 10%;
   height: 100px;
@@ -41,4 +41,5 @@ img {
 
 .text {
   text-align: center;
+  margin-bottom: 30px;
 }

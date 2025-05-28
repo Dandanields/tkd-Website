@@ -40,9 +40,11 @@ header {
   font-size: var(--heading3);
 }
 
+a {
+  color: white;
+}
+
 .ass-kick {
-  position: absolute;
-  margin-top: 60px;
   font-weight: 600;
   z-index: 1;
   text-align: center;
@@ -52,25 +54,27 @@ body {
   background-color: var(--main-color);
   height: 100%;
   width: 100%;
-  padding-bottom: 100px;
+}
+
+main {
+  position: relative;
 }
 
 .kick-img {
+  position: absolute;
+  top: 0;
   width: 100%;
   opacity: 0.5;
+  z-index: -1;
 }
 
 form {
-  position: relative;
   background-color: rgba(255, 255, 255, 0.77);
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100%;
   padding: 30px;
-  margin: 30px;
-  margin-top: -100px;
-  border-radius: 10px;
 }
 
 .label-up {
@@ -134,9 +138,28 @@ footer {
   background-color: var(--black-color);
   display: flex;
   justify-content: center;
-  position: fixed;
-  bottom: 0;
+  align-items: center;
 }
+
+footer .btn {
+  font-family: var(--google-font);
+  color: white;
+  font-size: var(--heading3);
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(240, 255, 255, 0);
+  border: none;
+  transition: all 0.5s;
+}
+footer .btn:hover {
+  font-family: var(--google-font);
+  color: white;
+  font-size: var(--heading3);
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 50px;
+}
+
 .nav-menu ul {
   height: 100%;
   width: 100%;
@@ -168,4 +191,10 @@ footer {
 }
 .nav-menu ul li a:hover {
   color: var(--black-color);
+}
+
+@media screen and (max-width: 900px) {
+  .kick-img {
+    height: 100%;
+  }
 }

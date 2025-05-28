@@ -1,15 +1,17 @@
-main {
+section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .calendar {
   background-color: white;
   border-radius: 15px;
   height: 100%;
-  margin: 50px 0;
+  margin: 80px 0px;
   padding: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .calendar ul li {
